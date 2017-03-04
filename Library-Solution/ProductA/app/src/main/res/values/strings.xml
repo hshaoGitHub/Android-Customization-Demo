@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">productA</string>
+    <string name="nav_title">product A</string>
+    <string name="nav_subtitle">productA@whitelabel</string>
+    <string name="dashboard_content">Dashboard for product A</string>
+</resources>

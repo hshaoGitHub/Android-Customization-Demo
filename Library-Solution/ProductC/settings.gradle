@@ -1,0 +1,5 @@
+include ':app'
+include ':core'
+
+project(':core').projectDir = new File(rootProject.projectDir, '../Core')
+project(':core').buildFileName = "core-library.gradle"

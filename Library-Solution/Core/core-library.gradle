@@ -1,0 +1,21 @@
+/**
+ * The Core library build file to build the core part as a shared library
+ */
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+    defaultConfig {
+        minSdkVersion 21
+        targetSdkVersion 25
+    }
+
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support:appcompat-v7:25.2.0'
+    compile 'com.android.support:support-v4:25.2.0'
+    compile 'com.android.support:design:25.2.0'
+}

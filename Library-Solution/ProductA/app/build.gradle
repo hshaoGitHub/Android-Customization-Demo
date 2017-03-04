@@ -1,0 +1,33 @@
+def CORE_LIB_PATH = project(':core').projectDir.absolutePath
+
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+    defaultConfig {
+        applicationId "com.eric.producta"
+        minSdkVersion 21
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    sourceSets {
+        main {
+            java {
+                // don't compile product's whitelabel folder
+                exclude 'com/eric/whitelabel'
+            }
+        }
+    }
+}
+
+dependencies {
+    compile project(':core')
+}
