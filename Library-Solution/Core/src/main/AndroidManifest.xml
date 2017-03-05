@@ -24,6 +24,8 @@
             android:label="@string/txt_manage"/>
         <activity android:name=".SlideShowActivity"
             android:label="@string/txt_slide_show"/>
+        <activity android:name=".ShareActivity"
+            android:label="@string/txt_share"/>
     </application>
 
 </manifest>

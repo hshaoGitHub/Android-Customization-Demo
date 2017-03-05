@@ -19,6 +19,8 @@ public class DashboardActivity extends Activity {
 
     private void setupUI() {
 
+        // Flex: A static final boolean to be customized
+        // Invalid code will be removed by compiler
         if (!FeatureConfig.FEATURE_CAMERA) {
             findViewById(R.id.btn_camera).setVisibility(View.GONE);
         }
@@ -33,6 +35,13 @@ public class DashboardActivity extends Activity {
 
         if (!FeatureConfig.FEATURE_SLIDE_SHOW) {
             findViewById(R.id.btn_slide_show).setVisibility(View.GONE);
+        }
+
+        // Flex: A boolean config in xml to be customized
+        // Default Android resource overlay, runtime customization
+        // Invalid code won't be removed
+        if (!getResources().getBoolean(R.bool.feature_share)) {
+            findViewById(R.id.btn_share).setVisibility(View.GONE);
         }
     }
 
@@ -57,6 +66,12 @@ public class DashboardActivity extends Activity {
     public void onSlideViewClicked(View view) {
         if (FeatureConfig.FEATURE_SLIDE_SHOW) {
             startActivity(new Intent(this, SlideShowActivity.class));
+        }
+    }
+
+    public void onShareClicked(View view) {
+        if (getResources().getBoolean(R.bool.feature_share)) {
+            startActivity(new Intent(this, ShareActivity.class));
         }
     }
 }

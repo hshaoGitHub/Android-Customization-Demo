@@ -50,4 +50,13 @@
         android:onClick="onSlideViewClicked"
         android:text="@string/txt_slide_show" />
 
+    <Button
+        android:id="@+id/btn_share"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="@dimen/button_height"
+        android:layout_margin="@dimen/view_vertical_margin"
+        android:drawableStart="@drawable/ic_share"
+        android:onClick="onShareClicked"
+        android:text="@string/txt_share" />
+
 </LinearLayout>

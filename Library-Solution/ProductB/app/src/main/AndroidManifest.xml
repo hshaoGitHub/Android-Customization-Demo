@@ -11,6 +11,8 @@
             tools:node="remove"/>
         <activity android:name="com.eric.core.GalleryActivity"
             tools:node="remove"/>
+        <activity android:name="com.eric.core.ShareActivity"
+            tools:node="remove"/>
     </application>
 
 </manifest>
