@@ -37,18 +37,26 @@ public class DashboardActivity extends Activity {
     }
 
     public void onCameraClicked(View view) {
-        startActivity(new Intent(this, CameraActivity.class));
+        if (FeatureConfig.FEATURE_CAMERA) {
+            startActivity(new Intent(this, CameraActivity.class));
+        }
     }
 
     public void onManageClicked(View view) {
-        startActivity(new Intent(this, ManageActivity.class));
+        if (FeatureConfig.FEATURE_MANAGE) {
+            startActivity(new Intent(this, ManageActivity.class));
+        }
     }
 
     public void onGalleryClicked(View view) {
-        startActivity(new Intent(this, GalleryActivity.class));
+        if (FeatureConfig.FEATURE_GALLERY) {
+            startActivity(new Intent(this, GalleryActivity.class));
+        }
     }
 
     public void onSlideViewClicked(View view) {
-        startActivity(new Intent(this, SlideShowActivity.class));
+        if (FeatureConfig.FEATURE_SLIDE_SHOW) {
+            startActivity(new Intent(this, SlideShowActivity.class));
+        }
     }
 }

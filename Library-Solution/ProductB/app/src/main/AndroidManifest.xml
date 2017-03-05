@@ -1,4 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.eric.productb">
 
     <application
@@ -6,7 +7,10 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true">
-
+        <activity android:name="com.eric.core.CameraActivity"
+            tools:node="remove"/>
+        <activity android:name="com.eric.core.GalleryActivity"
+            tools:node="remove"/>
     </application>
 
 </manifest>
