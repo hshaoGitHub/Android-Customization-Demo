@@ -1,4 +1,4 @@
-package com.eric.whitelabel;
+package com.eric.flex;
 
 /**
  * Created by hshao on 04/03/2017.

@@ -1,4 +1,4 @@
-package com.eric.whitelabel;
+package com.eric.flex;
 
 /**
  * Created by hshao on 04/03/2017.
@@ -10,5 +10,4 @@ public class FeatureConfigDefault {
     public static final boolean FEATURE_GALLERY = true;
     public static final boolean FEATURE_MANAGE = true;
     public static final boolean FEATURE_SLIDE_SHOW = true;
-    public static final boolean FEATURE_FAB = true;
 }

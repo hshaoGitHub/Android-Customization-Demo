@@ -1,26 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v4.widget.DrawerLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/drawer_layout"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/content_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_margin="@dimen/activity_horizontal_margin"
     android:fitsSystemWindows="true"
-    tools:openDrawer="start">
+    android:orientation="vertical">
 
-    <include
-        layout="@layout/app_bar_dashboard"
+    <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/view_vertical_margin"
+        android:textAppearance="@android:style/TextAppearance.Large"
+        android:text="@string/dashboard_content" />
 
-    <android.support.design.widget.NavigationView
-        android:id="@+id/nav_view"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_gravity="start"
-        android:fitsSystemWindows="true"
-        app:headerLayout="@layout/nav_header_dashboard"
-        app:menu="@menu/activity_dashboard_drawer" />
+    <Button
+        android:id="@+id/btn_camera"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="@dimen/button_height"
+        android:layout_margin="@dimen/view_vertical_margin"
+        android:drawableStart="@drawable/ic_camera"
+        android:onClick="onCameraClicked"
+        android:text="@string/txt_camera" />
 
-</android.support.v4.widget.DrawerLayout>
+    <Button
+        android:id="@+id/btn_gallery"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="@dimen/button_height"
+        android:layout_margin="@dimen/view_vertical_margin"
+        android:drawableStart="@drawable/ic_gallery"
+        android:onClick="onGalleryClicked"
+        android:text="@string/txt_gallery" />
+
+    <Button
+        android:id="@+id/btn_manage"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="@dimen/button_height"
+        android:layout_margin="@dimen/view_vertical_margin"
+        android:drawableStart="@drawable/ic_manage"
+        android:onClick="onManageClicked"
+        android:text="@string/txt_manage" />
+
+    <Button
+        android:id="@+id/btn_slide_show"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="@dimen/button_height"
+        android:layout_margin="@dimen/view_vertical_margin"
+        android:drawableStart="@drawable/ic_slideshow"
+        android:onClick="onSlideViewClicked"
+        android:text="@string/txt_slide_show" />
+
+</LinearLayout>

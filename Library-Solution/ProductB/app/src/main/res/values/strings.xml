@@ -1,6 +1,4 @@
 <resources>
-    <string name="app_name">productB</string>
-    <string name="nav_title">product B</string>
-    <string name="nav_subtitle">productB@whitelabel</string>
-    <string name="dashboard_content">Dashboard for product B</string>
+    <string name="app_name">Product B</string>
+    <string name="dashboard_content">Dashboard for Product B</string>
 </resources>

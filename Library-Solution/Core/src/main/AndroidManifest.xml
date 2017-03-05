@@ -10,25 +10,20 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".DashboardActivity"
-            android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".SettingsActivity"
-            android:label="@string/title_activity_settings" />
         <activity android:name=".CameraActivity"
-            android:label="@string/title_activity_camera"/>
+            android:label="@string/txt_camera"/>
         <activity android:name=".GalleryActivity"
-            android:label="@string/title_activity_gallery"/>
+            android:label="@string/txt_gallery"/>
         <activity android:name=".ManageActivity"
-            android:label="@string/title_activity_manage"/>
+            android:label="@string/txt_manage"/>
         <activity android:name=".SlideShowActivity"
-            android:label="@string/title_activity_slideshow"/>
+            android:label="@string/txt_slide_show"/>
     </application>
 
 </manifest>
