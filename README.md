@@ -1,2 +1,2 @@
-# Android-Whitelabel-Demo
-A demo to demonstrate the whitelabel solution in Android
+# Android-CustomizationDemo
+A demo to demonstrate the customization solution in Android
