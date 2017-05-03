@@ -20,8 +20,8 @@ android {
     sourceSets {
         main {
             java {
-                // don't compile product's flex folder
-                exclude 'com/eric/flex'
+                // don't compile product's customization folder
+                exclude 'com/eric/customization'
             }
         }
     }

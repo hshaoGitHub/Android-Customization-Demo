@@ -5,7 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-import com.eric.flex.FeatureConfig;
+import com.eric.customization.FeatureConfig;
 
 
 public class DashboardActivity extends Activity {
@@ -19,7 +19,7 @@ public class DashboardActivity extends Activity {
 
     private void setupUI() {
 
-        // Flex: A static final boolean to be customized
+        // Customization: A static final boolean to be customized
         // Invalid code will be removed by compiler
         if (!FeatureConfig.FEATURE_CAMERA) {
             findViewById(R.id.btn_camera).setVisibility(View.GONE);
@@ -37,7 +37,7 @@ public class DashboardActivity extends Activity {
             findViewById(R.id.btn_slide_show).setVisibility(View.GONE);
         }
 
-        // Flex: A boolean config in xml to be customized
+        // Customization: A boolean config in xml to be customized
         // Default Android resource overlay, runtime customization
         // Invalid code won't be removed
         if (!getResources().getBoolean(R.bool.feature_share)) {

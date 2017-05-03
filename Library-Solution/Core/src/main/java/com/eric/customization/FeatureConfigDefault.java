@@ -1,4 +1,4 @@
-package com.eric.flex;
+package com.eric.customization;
 
 /**
  * Created by hshao on 04/03/2017.

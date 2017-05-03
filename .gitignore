@@ -16,6 +16,7 @@ out/
 # Gradle files
 .gradle/
 build/
+.externalNativeBuild
 
 # Local configuration file (sdk path, etc)
 local.properties
@@ -38,3 +39,6 @@ captures/
 
 # Keystore files
 *.jks
+
+# Mac file
+.DS_Store

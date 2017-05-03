@@ -14,8 +14,8 @@ buildscript {
 
     // WL: copy the configs to core project
     project.copy {
-        from 'app/src/main/java/com/eric/flex'
-        into '../Core/src/main/java/com/eric/flex'
+        from 'app/src/main/java/com/eric/customization'
+        into '../Core/src/main/java/com/eric/customization'
     }
 }
 
