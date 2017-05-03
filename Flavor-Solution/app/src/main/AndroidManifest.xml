@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.eric.core">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".DashboardActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".CameraActivity"
+            android:label="@string/txt_camera"/>
+        <activity android:name=".GalleryActivity"
+            android:label="@string/txt_gallery"/>
+        <activity android:name=".ManageActivity"
+            android:label="@string/txt_manage"/>
+        <activity android:name=".SlideShowActivity"
+            android:label="@string/txt_slide_show"/>
+        <activity android:name=".ShareActivity"
+            android:label="@string/txt_share"/>
+    </application>
+
+</manifest>

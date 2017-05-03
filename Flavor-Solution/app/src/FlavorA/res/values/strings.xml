@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Flavor A</string>
+    <string name="dashboard_content">Dashboard for Flavor A</string>
+</resources>

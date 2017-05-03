@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Feature Configs stored in xml -->
+    <bool name="feature_share">false</bool>
+    
+</resources>
