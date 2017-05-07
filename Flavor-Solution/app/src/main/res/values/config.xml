@@ -5,4 +5,7 @@
 
     <!-- Class names for activity to start -->
     <string name="class_name_activity_gallery">com.eric.core.GalleryActivity</string>
+
+    <!-- Intent action to start activity -->
+    <string name="intent_action_manage">com.eric.core.action_start_manage</string>
 </resources>

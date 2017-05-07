@@ -53,7 +53,10 @@ public class DashboardActivity extends Activity {
 
     public void onManageClicked(View view) {
         if (FeatureConfig.FEATURE_MANAGE) {
-            startActivity(new Intent(this, ManageActivity.class));
+            // Customization: start an activity by intent action
+            Intent intent = new Intent();
+            intent.setAction(getString(R.string.intent_action_manage));
+            startActivity(intent);
         }
     }
 

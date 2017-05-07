@@ -12,6 +12,15 @@
             tools:node="remove"/>
         <activity android:name="com.eric.core.ShareActivity"
             tools:node="remove"/>
+        <activity android:name="com.eric.core.ManageActivity"
+            tools:node="remove"/>
+        <activity android:name="com.eric.customization.FlavorBManageActivity"
+            android:label="@string/txt_manage">
+            <intent-filter>
+                <action android:name="com.eric.flavorb.action_start_manage" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

@@ -2,5 +2,7 @@
 <resources>
     <!-- Feature Configs stored in xml -->
     <bool name="feature_share">false</bool>
-    
+
+    <!-- Intent action to start activity -->
+    <string name="intent_action_manage">com.eric.flavorb.action_start_manage</string>
 </resources>

@@ -21,7 +21,12 @@
         <activity android:name=".GalleryActivity"
             android:label="@string/txt_gallery"/>
         <activity android:name=".ManageActivity"
-            android:label="@string/txt_manage"/>
+            android:label="@string/txt_manage">
+            <intent-filter>
+                <action android:name="com.eric.core.action_start_manage" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
         <activity android:name=".SlideShowActivity"
             android:label="@string/txt_slide_show"/>
         <activity android:name=".ShareActivity"
