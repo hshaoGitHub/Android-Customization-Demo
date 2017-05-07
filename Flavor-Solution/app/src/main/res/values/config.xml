@@ -2,5 +2,7 @@
 <resources>
     <!-- Feature Configs stored in xml -->
     <bool name="feature_share">true</bool>
-    
+
+    <!-- Class names for activity to start -->
+    <string name="class_name_activity_gallery">com.eric.core.GalleryActivity</string>
 </resources>

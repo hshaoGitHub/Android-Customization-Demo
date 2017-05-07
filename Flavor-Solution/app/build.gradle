@@ -92,10 +92,6 @@ def generateApkName(String flavor, String versionName, int versionCode, String b
     // add build type
     name += "-" + buildType
 
-
-    // add build timestamp
-    name += "-" + new Date().format("yyyyMMdd")
-
     return name + ".apk"
 }
 

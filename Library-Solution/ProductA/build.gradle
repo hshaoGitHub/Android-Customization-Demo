@@ -12,7 +12,7 @@ buildscript {
         // in the individual module build.gradle files
     }
 
-    // WL: copy the configs to core project
+    // Customization: copy the configs to core project
     project.copy {
         from 'app/src/main/java/com/eric/customization'
         into '../Core/src/main/java/com/eric/customization'

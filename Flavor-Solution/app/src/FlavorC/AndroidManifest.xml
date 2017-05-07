@@ -10,6 +10,10 @@
             tools:node="remove"/>
         <activity android:name="com.eric.core.SlideShowActivity"
             tools:node="remove"/>
+        <activity android:name="com.eric.core.GalleryActivity"
+            tools:node="remove"/>
+        <activity android:name="com.eric.customization.FlavorCGalleryActivity"
+            android:label="@string/txt_gallery"/>
     </application>
 
 </manifest>

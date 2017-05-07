@@ -59,7 +59,16 @@ public class DashboardActivity extends Activity {
 
     public void onGalleryClicked(View view) {
         if (FeatureConfig.FEATURE_GALLERY) {
-            startActivity(new Intent(this, GalleryActivity.class));
+            // Customization: start an activity by reflection with customized string of class name
+            Intent intent = null;
+            try {
+                intent = new Intent(this, Class.forName(getString(R.string.class_name_activity_gallery)));
+            } catch (ClassNotFoundException e) {
+                e.printStackTrace();
+            }
+            if (intent != null) {
+                startActivity(intent);
+            }
         }
     }
 
